@@ -8,6 +8,7 @@ resource "aws_db_subnet_group" "yap_db_subnet" {
 }
 
 resource "aws_db_instance" "default" {
+    identifier                  = "yap-database"
     allocated_storage           = 10
     db_name                     = "yapDB"
     engine                      = "mysql"
@@ -17,4 +18,5 @@ resource "aws_db_instance" "default" {
     manage_master_user_password = true
     username                    = "admin"
     parameter_group_name        = "default.mysql8.0"
+    skip_final_snapshot         = true
 }
