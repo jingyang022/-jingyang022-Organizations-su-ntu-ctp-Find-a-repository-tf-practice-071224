@@ -1,2 +1,3 @@
-# -jingyang022-Organizations-su-ntu-ctp-Find-a-repository-tf-practice-071224
-for the coaching session on 07 Dec 24
+# For the Activity #2 of 07 Dec 24 coaching session.
+
+Use Terraform to create an EC2 to access RDS which resides in a private subnet.
